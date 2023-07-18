@@ -373,7 +373,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a hr
 <span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.fix_win <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.end <span class="op">=</span> <span class="va">False</span></span>
 <span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>        </span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This is what our AI will train against. Random shit.</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="co"># This is what our AI will train against. Random stuff.</span></span>
 <span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> choose_edge_to_cut(<span class="va">self</span>):</span>
 <span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>        edge_to_cut <span class="op">=</span> random.choice(<span class="bu">list</span>(<span class="va">self</span>.remaining))</span>
 <span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> edge_to_cut    </span>
@@ -479,7 +479,7 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a hr
 <span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>        remaining_count <span class="op">=</span> <span class="va">self</span>.unsecured_count</span>
 <span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>        secured_edges <span class="op">=</span> <span class="va">self</span>.secured_edges</span>
 <span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a>        deleted_edges <span class="op">=</span> <span class="va">self</span>.removed_edges</span>
-<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>        remaining_edges <span class="op">=</span> <span class="bu">list</span>(<span class="va">self</span>.remaining) <span class="co"># Yet for this, we&#39;ll keep the reverse edges. Bit hypocritical, but fuck it.</span></span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>        remaining_edges <span class="op">=</span> <span class="bu">list</span>(<span class="va">self</span>.remaining) <span class="co"># Yet for this, we&#39;ll keep the reverse edges. Bit hypocritical, but eh.</span></span>
 <span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>        </span>
 <span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a>        state <span class="op">=</span> (secured_edges, deleted_edges, remaining_edges, secured_count, remaining_count)</span>
 <span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a>    </span>
